@@ -5,7 +5,7 @@ Enhanced Heap Plotter with G1 Time-based Sizing Support
 This enhanced version supports traditional G1 region plotting plus new time-based
 heap sizing visualizations. It maintains compatibility with the original heap_plotter
 while adding comprehensive sizing activity analysis.
-
+#
 Features:
 - Traditional GC log analysis (heap occupancy, pause duration, scaling)
 - G1 region transitions visualization
