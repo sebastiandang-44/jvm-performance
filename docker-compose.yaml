@@ -1,0 +1,63 @@
+version: "3.9"
+services:
+  spark-master:
+    container_name: spark-master-container
+    platform: linux/arm64
+    image: spark
+    volumes:
+      - "/Users/sebastiandang/Documents/docker-volumes/redhat-containers-volume/ubi9-pyspark-app-withport-standalone-app:/apps"
+    environment:
+      - SPARK_MODE=master
+      - SPARK_MASTER_MEMORY=2G
+      - SPARK_MASTER_CORES=2
+    ports:
+      - "4040:4040" #spark.ui.port
+      - "7337:7337" #spark.shuffle.service.port
+      - "15002:15002" #port for spark connect server to bind
+      - "7077:7077" # spark.master.port
+      - "8080:8080" #spark.master.webui.port
+      - "18080:18080" #spark.history.ui.port
+      - "6066:6066" #spark.master.rest.port
+      - "2304:2304" #spark.thriftserver.port
+      - "10000:10000" #spark.thriftserver.port
+    command:
+      - /opt/spark/bin/spark-class
+      - org.apache.spark.deploy.master.Master
+
+  spark-worker1:
+    container_name: spark-worker-container1
+    platform: linux/arm64
+    image: spark
+    volumes:
+      - "/Users/sebastiandang/Documents/docker-volumes/redhat-containers-volume/ubi9-pyspark-app-withport-standalone-app:/apps"
+    environment:
+      - SPARK_MODE=worker
+      - SPARK_MASTER_URL=spark://spark-master:7077
+      - SPARK_WORKER_MEMORY=2G
+      - SPARK_WORKER_CORES=2
+    ports:
+      - "8081:8081"
+    depends_on:
+      - spark-master
+    command:
+      - /opt/spark/bin/spark-class
+      - org.apache.spark.deploy.worker.Worker
+      - spark://spark-master:7077
+
+  spark-worker2:
+    container_name: spark-worker-container2
+    platform: linux/arm64
+    image: spark
+    volumes:
+      - "/Users/sebastiandang/Documents/docker-volumes/redhat-containers-volume/ubi9-pyspark-app-withport-standalone-app:/apps"
+    environment:
+      - SPARK_MODE=worker
+      - SPARK_MASTER_URL=spark://spark-master:7077
+      - SPARK_WORKER_MEMORY=2G
+      - SPARK_WORKER_CORES=2
+    depends_on:
+      - spark-master
+    command:
+      - /opt/spark/bin/spark-class
+      - org.apache.spark.deploy.worker.Worker
+      - spark://spark-master:7077
