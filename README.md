@@ -30,3 +30,8 @@ Task Duration (avg / max) - Indicates average and maximum task execution time
 ### Sample Log
 `driver.gc.log `
 `event-app.zstd` in zstandard compresssion format
+
+### Technical Stacks
+
+<img width="1611" height="176" alt="image" src="https://github.com/user-attachments/assets/61582e70-def1-41ef-b30e-5a71c54c7eb8](https://cdn.worldvectorlogo.com/logos/docker.svg)" /># JVM Logging Project
+
