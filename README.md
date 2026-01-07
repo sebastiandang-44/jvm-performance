@@ -33,5 +33,6 @@ Task Duration (avg / max) - Indicates average and maximum task execution time
 
 ### Technical Stacks
 
-![docker](https://github.com/user-attachments/assets/6e183566-98ea-4420-8caa-6a9fc4097ad6)
+<img alt="image" src="![docker](https://github.com/user-attachments/assets/9b0ac6f1-8a5f-4e5f-aa7d-1950ffdd6395)/>
+
 
