@@ -32,7 +32,7 @@ Task Duration (avg / max) - Indicates average and maximum task execution time
 `event-app.zstd` in zstandard compresssion format
 
 ### Technical Stacks
-![Docker Logo](https://cdn.worldvectorlogo.com/logos/docker.svg)
+<img src="https://cdn.worldvectorlogo.com/logos/docker.svg" width="120" />
 
 
 
