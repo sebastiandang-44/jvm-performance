@@ -33,5 +33,5 @@ Task Duration (avg / max) - Indicates average and maximum task execution time
 
 ### Technical Stacks
 
-<img width="1611" height="176" alt="image" src="https://github.com/user-attachments/assets/61582e70-def1-41ef-b30e-5a71c54c7eb8](https://cdn.worldvectorlogo.com/logos/docker.svg)" /># JVM Logging Project
+![docker](https://github.com/user-attachments/assets/6e183566-98ea-4420-8caa-6a9fc4097ad6)
 
