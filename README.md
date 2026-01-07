@@ -32,9 +32,13 @@ Task Duration (avg / max) - Indicates average and maximum task execution time
 `event-app.zstd` in zstandard compresssion format
 
 ### Technical Stacks
-<img src="https://cdn.worldvectorlogo.com/logos/docker.svg" width="120" /> <img src="https://media.licdn.com/dms/image/v2/D4D12AQHwu5NLp72OPQ/article-cover_image-shrink_600_2000/article-cover_image-shrink_600_2000/0/1667078470839?e=2147483647&v=beta&t=SgIRoLmj0owgzzh1WFDi9rlkCNqtk2NeykroMXeeTVw"
-     width="120" alt="Cover Image"> <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/f/f3/Apache_Spark_logo.svg/2560px-Apache_Spark_logo.svg.png"
-     width="120" alt="Apache Spark Logo">
+<img src="https://cdn.worldvectorlogo.com/logos/docker.svg" width="120" />      <img src="https://media.licdn.com/dms/image/v2/D4D12AQHwu5NLp72OPQ/article-cover_image-shrink_600_2000/article-cover_image-shrink_600_2000/0/1667078470839?e=2147483647&v=beta&t=SgIRoLmj0owgzzh1WFDi9rlkCNqtk2NeykroMXeeTVw"
+     width="120" alt="Cover Image">      <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/f/f3/Apache_Spark_logo.svg/2560px-Apache_Spark_logo.svg.png"
+     width="120" alt="Apache Spark Logo">      <img src="https://1000logos.net/wp-content/uploads/2021/05/Atlassian-Logo-2010s1.png"
+     width="120" alt="Atlassian Logo">     <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/b/b9/Slack_Technologies_Logo.svg/2560px-Slack_Technologies_Logo.svg.png"
+     width="120" alt="Slack Logo">
+
+
 
 
 
